@@ -1,0 +1,144 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  background-color: #ffffff;
+}
+#b {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #f0f2f5;
+}#b1 {
+  flex: 8;
+  display: flex; 
+}
+
+#b2 {
+  flex: 2;
+  display: flex;
+  flex-direction: column; 
+}#b11, #b12, #b21 {
+  flex: 1;
+} #b22 {
+  flex: 2;
+}
+
+#b11 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;   /* центр по вертикали */
+  padding-left: 250px;       /* отступ как у Facebook */
+}#b12 {
+  display: flex;
+  justify-content: center;  /* центр по горизонтали */
+  align-items: center;   
+  padding-right: 250px;   /* центр по вертикали */
+}#b21 {
+  padding-left: 200px;   
+  padding-right: 250px;    /* отступ как у Facebook */
+}#b22 {
+ padding-left: 200px;   
+  padding-right: 250px;   /* центр по вертикали */
+}
+
+
+#form1{
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 320px;
+}
+
+input{
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 10px;
+    
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}#button1{
+    width: 100%;
+    padding: 10px;
+    background-color: #0866ff;;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#a1{
+    color: rgb(59, 89, 152);
+    text-decoration: none;
+    font-size: 14px;
+    text-align: center;
+    display: block;
+    margin-top: 10px;
+}.separator {
+  border: 0;
+  border-top: 1px solid #dddfe2; 
+  margin: 0; 
+  width: 100%;
+}#button2{
+    width: 80%;
+    padding: 10px;
+    background-color: rgb(54, 158, 99);
+    color: rgb(255, 255, 255);
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 10%;
+    margin-top: 20px;
+}#a2{
+    color: rgb(2, 2, 3);
+    text-decoration: none;
+    }#b2{
+    background-color: white;
+}
+
+.a3{
+    color: gray;
+    text-decoration: none;
+    font-size: 12px;
+    margin-left: 5px;
+    display: block;
+}.a4{
+    color: gray;
+    text-decoration: none;
+    font-size: 12px;
+    margin: 0 5px;
+}
+
+#p11{
+    font-size: 60px;
+    color: #0866ff;;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    margin-bottom: 10px;
+}#p12{
+    margin-top: 0;
+    font-size: 25px;
+    color: black;
+    font-family: Arial, sans-serif;
+    padding-bottom: 100px;
+    
+}#p13{
+    font-size: 14px;
+    color: black;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+
+li{
+    display: inline-block;
+}
+
+.separator2 {
+  border: 0;
+  border-top: 1px solid #dddfe2; 
+  margin-left: 45px;
+  margin-right: 50px;
+}
