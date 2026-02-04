@@ -26,19 +26,19 @@ html, body {
 #b11 {
   display: flex;
   flex-direction: column;
-  justify-content: center;   /* центр по вертикали */
-  padding-left: 250px;       /* отступ как у Facebook */
+  justify-content: center;   
+  padding-left: 250px;       
 }#b12 {
   display: flex;
-  justify-content: center;  /* центр по горизонтали */
+  justify-content: center;  
   align-items: center;   
-  padding-right: 250px;   /* центр по вертикали */
+  padding-right: 250px;  
 }#b21 {
   padding-left: 200px;   
-  padding-right: 250px;    /* отступ как у Facebook */
+  padding-right: 250px;   
 }#b22 {
  padding-left: 200px;   
-  padding-right: 250px;   /* центр по вертикали */
+  padding-right: 250px;   
 }
 
 
