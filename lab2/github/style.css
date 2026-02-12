@@ -182,9 +182,7 @@ li{
 
 #bottom .grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 карточки в ряд */
-    grid-template-rows: repeat(2, auto);  /* 2 ряда, высота под контент */
-    gap: 30px;                             /* расстояние между карточками */
+    gap: 30px;                             
     padding: 30px;
 }
 
