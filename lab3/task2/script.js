@@ -4,8 +4,9 @@ const todoList = document.getElementById('todo-list');
 
 addBtn.addEventListener('click', () => {
     const taskText = input.value.trim();
-    
-    if (taskText !== "") {
+    if(taskText.includes("1")) {
+        alert("wrong text");
+    } else if (taskText !== "") {
         const li = document.createElement('li');
         const checkbox = document.createElement('input');
         checkbox.type = 'checkbox';

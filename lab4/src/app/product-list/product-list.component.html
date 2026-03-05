@@ -1,0 +1,23 @@
+<div class="conteiner">
+    @for(product of products; track product.id) {
+        <div class="card">
+            <img src={{product.image}} alt="product image" class="img1">
+            <h2>{{product.name}}</h2>
+            <p class="descri">{{product.description}}</p>
+            <p class="price">{{product.price}}tg.</p>
+            <p class="rat">{{product.rating}}/5</p>
+            <a href={{product.link}} class="link" target="_blank">Kaspi</a>
+            <div class="share">
+                <p>Share via:</p>
+                <button class="what" (click)="shareWhatsApp(product)">WhatsApp</button>
+                <button class="tg" (click)="shareTelegram(product)">Telegram</button>
+            </div>
+            <div class="img2div">
+            <img src={{product.images[0]}} alt="product image"  class="img2">
+            <img src={{product.images[1]}} alt="product image"   class="img2">
+            <img src={{product.images[2]}} alt="product image"  class="img2">
+            <img src={{product.images[3]}} alt="product image"  class="img2">
+            </div>
+        </div>
+    }
+</div>
