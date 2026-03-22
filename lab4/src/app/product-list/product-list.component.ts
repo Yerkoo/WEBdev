@@ -10,7 +10,7 @@ import {Product} from '../product.model';
   styleUrl: './product-list.component.css'
 })
 export class ProductListComponent {
-products: Product[] = [
+protected readonly products = signal <Product[]> ([
   {id: 1,
   name: 'iphone 17',
   description: 'Apple Iphone 17 256GB White',
@@ -121,16 +121,25 @@ products: Product[] = [
            'https://resources.cdn-kaspi.kz/img/m/p/p20/pa5/64165822.png?format=gallery-medium',
            'https://resources.cdn-kaspi.kz/img/m/p/p58/pa5/64165824.png?format=gallery-medium'],
   link: 'https://kaspi.kz/shop/p/apple-iphone-17-256gb-belyi-145466818/?c=750000000&utm_source=google&utm_medium=cpc&utm_campaign=shop_google_search_sports_and_outdoors_sports_nutrition_brand&gbraid=0AAAAAC7-v7j-6MGOAcCWyy4ggZDZNWQAY&gclid=Cj0KCQiA7-rMBhCFARIsAKnLKtCyxHmmpMVB01HQZNRsqVkS-WyJCK_LKdr3v5bKzc12wwRk0rhU57UaAnFFEALw_wcB'
-  }]
-shareWhatsApp(product: Product) {
+  }
+  ])
+  shareWhatsApp(product: Product) {
     const message = encodeURIComponent(`Оцени: ${product.name} — ${product.link}`);
     const url = `https://wa.me/?text=${message}`;
     window.open(url, '_blank');
   }
 
   shareTelegram(product: Product) {
-    const url = `https://t.me/share/url?url=${encodeURIComponent(product.link)}&text='Оцени: ${encodeURIComponent(product.name)}'`;
+    const url = `https://t.me/share/url?url=${encodeURIComponent(product.link)}&text=Оцени: ${encodeURIComponent(product.name)}`;
     window.open(url, '_blank');
   }
+
+changeImage(product: Product, newImage: string) {
+  product.image = newImage;
+}
+}
+
+function signal<T>(arg0: {}[]) {
+  throw new Error('Function not implemented.');
 }
 

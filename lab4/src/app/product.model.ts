@@ -5,6 +5,8 @@ export interface Product {
   price: number;
   rating: number;
   image: string;
-  images: string[]; // Минимум 3 картинки по заданию
-  link: string;     // Ссылка на Kaspi
+  images: string[]; 
+  link: string;     
+  likes:number;
+  categoryId:number;
 }
