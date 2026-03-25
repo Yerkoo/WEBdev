@@ -1,1 +1,29 @@
-<p>product-items works!</p>
+<div class="conteiner">
+   
+        <div class="card">
+            <img src={{product().image}} alt="product image" class="img1">
+            <h2>{{product().name}}</h2>
+            <p class="descri">{{product().description}}</p>
+            <p class="price">{{product().price}}tg.</p>
+            <p class="rat">{{product().rating}}/5</p>
+            <button (click)="like()" class="like-button">
+            ❤️ like({{ product().likes }})
+            </button>
+            <button (click)="delete()" class="delete-btn">🗑️ Удалить</button>
+            <a href= {{product().link}} class="link" target="_blank">Kaspi</a>
+            <div class="share">
+                <p>Share via:</p>
+                <button class="what" (click)="shareWhatsApp(product())">WhatsApp</button>
+                <button class="tg" (click)="shareTelegram(product())">Telegram</button>
+            </div>
+            <div class="img2div">
+                @for (img of product().images; track img) {
+                <img 
+                [src]="img" 
+                (click)="changeImage(product(),img)" 
+                class="img2">
+                }
+            </div>
+        </div>
+                
+</div>

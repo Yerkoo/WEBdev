@@ -1,1 +1,13 @@
-<app-product-list></app-product-list>
+<h1>Мой Kaspi Магазин</h1>
+
+<div class="category-buttons">
+  @for (category of categories; track category.id) {
+    <button 
+      (click)="selectCategory(category.id)"
+      [class.active]="category.id === selectedCategoryId">
+      {{ category.name }}
+    </button>
+  }
+</div>
+
+<app-product-list [products]="currentProducts" (removeEvent)="delete($event)"></app-product-list>

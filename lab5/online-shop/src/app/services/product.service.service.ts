@@ -5,7 +5,7 @@ import { Product } from '../models/product.model';
 @Injectable({
   providedIn: 'root'
 })
-export class ProductServiceService {
-private readonly massiv= signal<Product[]>(Products)
+export class ProductService {
+products= signal<Product[]>(Products)
 
 }

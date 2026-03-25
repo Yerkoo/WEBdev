@@ -1,16 +1,16 @@
 import { Component,input,output } from '@angular/core';
 import {CommonModule} from '@angular/common';
-import { ProductServiceService } from '../services/product.service.service';
+import { Product } from '../models/product.model';
 
 @Component({
-  selector: 'app-product-list',
+  selector: 'app-product-item',
   standalone: true,
   imports: [CommonModule],
   templateUrl: './product-items.component.html',
   styleUrl: './product-items.component.css'
 })
-export class ProductListComponent {
-product= input.required<Products>();
+export class ProductItemComponent {
+product= input.required<Product>();
 
 
   shareWhatsApp(product: Product) {
@@ -27,9 +27,14 @@ product= input.required<Products>();
 changeImage(product: Product, newImage: string) {
   product.image = newImage;
 }
+
+like(){
+  this.product().likes+=1;
 }
 
-function signal<T>(arg0: {}[]) {
-  throw new Error('Function not implemented.');
+deleteEvent=output<number>();
+delete(){
+  this.deleteEvent.emit(this.product().id);
+}
 }
 

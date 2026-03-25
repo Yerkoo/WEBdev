@@ -10,16 +10,16 @@ export const Products: Product[]=[
   {
     id: 2, categoryId: 1, name: 'Samsung Galaxy S24 Ultra', price: 580000, rating: 4.9, likes: 0,
     description: 'ИИ-камера 200 Мп, стилус S Pen.',
-    image: 'https://resources.cdn-kaspi.kz/img/m/p/h27/h4b/84954316341278.jpg',
-    images: ['https://resources.cdn-kaspi.kz/img/m/p/h27/h4b/84954316341278.jpg', 'https://resources.cdn-kaspi.kz/img/m/p/h57/h58/84954316406814.jpg', 'https://resources.cdn-kaspi.kz/img/m/p/hc6/h4d/84954316472350.jpg'],
+    image: 'https://resources.cdn-kaspi.kz/img/m/p/h7c/h38/84963297329182.png?format=gallery-medium',
+    images: ['https://resources.cdn-kaspi.kz/img/m/p/hfe/ha8/84963297394718.png?format=gallery-medium', 'https://resources.cdn-kaspi.kz/img/m/p/hce/h21/84963123462174.png?format=gallery-medium', 'https://resources.cdn-kaspi.kz/img/m/p/hdb/h7e/84963123494942.png?format=gallery-medium'],
     link: 'https://kaspi.kz/shop/p/samsung-galaxy-s24-ultra-12-gb-256-gb-seryi-116043556/'
   },
   {
     id: 3, categoryId: 1, name: 'Xiaomi 14 Ultra', price: 550000, rating: 4.8, likes: 0,
     description: 'Профессиональная оптика Leica.',
-    image: 'https://resources.cdn-kaspi.kz/img/m/p/h20/h8b/85633845919774.jpg',
-    images: ['https://resources.cdn-kaspi.kz/img/m/p/h20/h8b/85633845919774.jpg', 'https://resources.cdn-kaspi.kz/img/m/p/h5c/h67/85633845985310.jpg', 'https://resources.cdn-kaspi.kz/img/m/p/h4a/h43/85633846050846.jpg'],
-    link: 'https://kaspi.kz/shop/p/xiaomi-14-ultra-16-gb-512-gb-chernyi-118121658/'
+    image: 'https://resources.cdn-kaspi.kz/img/m/p/p64/p81/67214865.png?format=gallery-medium',
+    images: ['https://resources.cdn-kaspi.kz/img/m/p/p65/p99/45808873.jpg?format=gallery-medium', 'https://resources.cdn-kaspi.kz/img/m/p/p81/p99/45808874.jpg?format=gallery-medium', 'https://resources.cdn-kaspi.kz/img/m/p/pb9/p99/45808876.jpg?format=gallery-medium'],
+    link: 'https://kaspi.kz/shop/p/xiaomi-redmi-note-14-pro-8-gb-256-gb-chernyi-133335702/?c=750000000'
   },
   {
     id: 4, categoryId: 1, name: 'Google Pixel 8 Pro', price: 420000, rating: 4.7, likes: 0,
